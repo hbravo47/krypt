@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProjectGuid>{4C870009-0B13-4AA5-BB55-D719A7C0E455}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="client\" />
+    <Folder Include="smart_contract\" />
+    <Folder Include="client\src\components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="client\src\components\Navbar.jsx" />
+    <None Include="client\src\components\Footer.jsx" />
+    <None Include="client\src\components\Loader.jsx" />
+    <None Include="client\src\components\Services.jsx" />
+    <None Include="client\src\components\Transactions.jsx" />
+    <None Include="client\src\components\Welcome.jsx" />
+    <None Include="client\src\components\Index.jsx" />
+    <None Include="smart_contract\contracts\Transactions.sol" />
+  </ItemGroup>
+</Project>
